@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BAA-mp-OfS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DIC-Yy-e4s">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -89,7 +89,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJY-yJ-A0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204" y="125"/>
+            <point key="canvasLocation" x="-404" y="115"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="mLs-bT-fka">
@@ -396,6 +396,9 @@
                                                 <constraint firstItem="3S2-Vg-7XT" firstAttribute="centerY" secondItem="UPD-L6-Wbc" secondAttribute="centerY" id="bBW-5V-lOm"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GqA-W3-nmw" kind="custom" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="acu-rc-eh3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -415,7 +418,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B63-ly-Eco" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-223.19999999999999" y="811.84407796101959"/>
+            <point key="canvasLocation" x="566" y="796"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xch-7Q-dxT">
@@ -438,11 +441,79 @@
                             <constraint firstItem="xmK-ER-pmR" firstAttribute="top" secondItem="leL-uU-UCt" secondAttribute="top" id="E6o-Ne-9jE"/>
                             <constraint firstItem="xmK-ER-pmR" firstAttribute="leading" secondItem="leL-uU-UCt" secondAttribute="leading" id="lZX-hG-hWV"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="8g9-39-nvg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddh-BT-wXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="1003"/>
+            <point key="canvasLocation" x="548" y="1322"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="veY-aN-uSA">
+            <objects>
+                <viewController id="T9j-6T-xBW" customClass="SYAboutUsViewController" customModule="oFo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mii-hY-xt2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-LC-pcL">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wch-LC-pcL" firstAttribute="centerY" secondItem="mii-hY-xt2" secondAttribute="centerY" id="Bk8-yB-aaL"/>
+                            <constraint firstItem="Wch-LC-pcL" firstAttribute="centerX" secondItem="mii-hY-xt2" secondAttribute="centerX" id="FRP-9P-acC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R27-M4-80P"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Da-zy-PYa">
+                        <barButtonItem key="leftBarButtonItem" title="关闭" id="JUI-GD-N80"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ni-1h-51X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="790"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="G6U-f1-zyw">
+            <objects>
+                <viewController id="DIC-Yy-e4s" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Sy-eL-l7w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MOZ-s9-uEt"/>
+                    </view>
+                    <connections>
+                        <segue destination="Ec9-Um-nND" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="fDz-bx-Qoy"/>
+                        <segue destination="BAA-mp-OfS" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="WpJ-KK-Beo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUU-TV-Xl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="796"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8zC-Ty-eQ2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GqA-W3-nmw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fVh-fB-brG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T9j-6T-xBW" kind="relationship" relationship="rootViewController" id="8ys-vM-EMH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biQ-B3-L9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1343" y="796"/>
         </scene>
     </scenes>
     <resources>

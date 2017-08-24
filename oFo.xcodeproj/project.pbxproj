@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A52433B906BE91E220E93CC /* Pods_oFoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9723B481F91053134B731E6E /* Pods_oFoUITests.framework */; };
+		2C0C73151F4EC3BD0051804E /* SYAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C73141F4EC3BD0051804E /* SYAboutUsViewController.swift */; };
 		2C3A7F901F4EB3CD00D4917A /* SYMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A7F8F1F4EB3CD00D4917A /* SYMenuController.swift */; };
 		2C3A7F921F4EB59B00D4917A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2C3A7F911F4EB59B00D4917A /* Podfile */; };
 		2CF91C711F4DC67B005584BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF91C701F4DC67B005584BD /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		18D7C65DDD92906C978C4805 /* Pods-oFoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oFoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-oFoUITests/Pods-oFoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C0C73141F4EC3BD0051804E /* SYAboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYAboutUsViewController.swift; sourceTree = "<group>"; };
 		2C3A7F8F1F4EB3CD00D4917A /* SYMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYMenuController.swift; sourceTree = "<group>"; };
 		2C3A7F911F4EB59B00D4917A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2C3A7F931F4EB6EB00D4917A /* oFo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oFo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				2CF91C701F4DC67B005584BD /* AppDelegate.swift */,
 				2CF91C721F4DC67B005584BD /* ViewController.swift */,
 				2CF91CA11F4DD047005584BD /* SYWebViewController.swift */,
+				2C0C73141F4EC3BD0051804E /* SYAboutUsViewController.swift */,
 				2C3A7F8F1F4EB3CD00D4917A /* SYMenuController.swift */,
 				2CF91C741F4DC67B005584BD /* Main.storyboard */,
 				2CF91C771F4DC67B005584BD /* Assets.xcassets */,
@@ -472,6 +475,7 @@
 				2CF91C711F4DC67B005584BD /* AppDelegate.swift in Sources */,
 				2C3A7F901F4EB3CD00D4917A /* SYMenuController.swift in Sources */,
 				2CF91CA21F4DD047005584BD /* SYWebViewController.swift in Sources */,
+				2C0C73151F4EC3BD0051804E /* SYAboutUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

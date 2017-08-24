@@ -1,24 +1,23 @@
 //
-//  SYWebViewController.swift
+//  SYAboutUsViewController.swift
 //  oFo
 //
-//  Created by haosongyan on 2017/8/23.
+//  Created by 郝松岩 on 2017/8/24.
 //  Copyright © 2017年 haosongyan. All rights reserved.
 //
 
 import UIKit
+import SWRevealViewController
+class SYAboutUsViewController: UIViewController {
 
-class SYWebViewController: UIViewController {
-
-    @IBOutlet weak var webView: UIWebView!
-   
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "热门活动"
-        let url = URL(string:"http://m.ofo.so/active.html")!
-        let request = URLRequest(url:url)
-       webView.loadRequest(request)
-        
+        if let realVC = revealViewController() {
+            realVC.rearViewRevealWidth = 280
+            navigationItem.leftBarButtonItem?.target = realVC
+            navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(realVC.panGestureRecognizer())
+        }
     }
 
     override func didReceiveMemoryWarning() {
